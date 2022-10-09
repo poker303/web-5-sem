@@ -1,0 +1,49 @@
+.firstButton,
+.secondButton{
+    text-align: left;
+}
+
+.profile,
+.timetables,
+.map,
+.subjects ,
+.teachers,
+.tasks{
+    background: #D9BFA9;
+    font-family: RobotoM, sans-serif;
+    font-size: 15px;
+    color: black;
+    border: 3px solid black;
+    padding: 2px 4px;
+    cursor: grab;
+}
+
+.profile:hover{
+    color: #3B4B59;
+    border-color: #3B4B59;
+}
+
+.timetables:hover{
+    color: #3B4B59;
+    border-color: #3B4B59;
+}
+
+.map:hover{
+    color: #3B4B59;
+    border-color: #3B4B59;
+}
+
+.subjects:hover{
+    color: #3B4B59;
+    border-color: #3B4B59;
+}
+
+.teachers:hover{
+    color: #3B4B59;
+    border-color: #3B4B59;
+}
+
+.tasks:hover{
+    color: #3B4B59;
+    border-color: #3B4B59;
+}
