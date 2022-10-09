@@ -1,0 +1,60 @@
+/*index.html*/
+body {
+    background: #B0C1D9;
+}
+.indexHeader{
+    font-family: RobotoT, serif;
+    font-size: 1.3em;
+    line-height: 125%;
+    text-align: center;
+    text-decoration: underline dashed blueviolet;
+    margin-left: 5px;
+    color: blueviolet;
+}
+.indexMain{
+    background: #88A5BF;
+    font-family: RobotoB, serif;
+    padding: 5px 5px;
+}
+.indexFooter{
+    background: #88A5BF;
+    font-family: RobotoR, serif;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    word-spacing: 4px;
+}
+
+/*tasks.html*/
+.tasksHeader{
+    font-family: RobotoT, serif;
+    font-size: 1.3em;
+    line-height: 125%;
+    padding: 5px 5px;
+    text-decoration: underline dashed blueviolet;
+    color: black;
+}
+.tasksMain{
+    background: #88A5BF;
+    font-family: RobotoR, serif;
+    vertical-align: middle;
+    padding: 5px 5px;
+}
+.subjectTasks{
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-transform: uppercase;
+}
+.quotes{
+    vertical-align: middle;
+    text-indent: 5px;
+}
+.tasksFooter{
+    background: #88A5BF;
+    font-family: RobotoR, serif;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    word-spacing: 4px;
+    padding: 5px 5px;
+}
