@@ -1,0 +1,20 @@
+.login,
+.registration{
+    background: #D99255;
+    font-family: RobotoM, sans-serif;
+    font-size: 15px;
+    color: #26010B;
+    border: 2px solid black;
+    padding: 2px 4px;
+    cursor: grab;
+}
+
+.login:hover{
+    color: #8C6249;
+    border-color: #8C6249;
+}
+
+.registration:hover{
+    color: #8C6249;
+    border-color: #8C6249;
+}
