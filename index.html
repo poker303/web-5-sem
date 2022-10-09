@@ -6,45 +6,83 @@
     <meta name="description" content="Удобное расписание для студента">
     <meta name="keywords" content="расписание, меню, карта, предметы, дела">
     <link rel="icon" href="images/main.png">
+    <link rel="stylesheet" href="css/styles/fonts.css">
+    <link rel="stylesheet" href="css/styles/buttons/menuButtons.css">
+    <link rel="stylesheet" href="css/styles/buttons/registrationButtons.css">
+    <link rel="stylesheet" href="css/styles/index.css">
+    <link rel="stylesheet" href="css/styles/images.css">
 </head>
 
 <body>
-<header>
-    <a href="index.html"><img src="images/mainLogo.jpg" alt="Логотип"></a>
+<header class="indexHeader">
+    <div class="mainLogo"><a href="index.html"><img src="images/logo.jpg " alt="Логотип"></a></div>
     <h1>Schedule</h1>
     <h2>Главная страница</h2>
+
+    <form action="html/registration/login.html" method="get" target="_blank" class="firstButton">
+        <p>
+            <button class="login">Вход</button>
+        </p>
+    </form>
+
+    <form action="html/registration/registration.html" method="get" target="_blank" class="secondButton">
+        <p>
+            <button class="registration">Регистрация</button>
+        </p>
+    </form>
 </header>
 
-<main>
+<main class="indexMain">
     <aside>
         <p>Меню:</p>
-        <ul>
-            <li><a href="html/profile.html">Профиль</a></li>
-            <li><a href="html/timetable.html">Расписание</a></li>
-            <li><a href="html/map.html">Карта</a></li>
-            <li><a href="html/subjects.html">Предметы</a></li>
-            <li><a href="html/teachers.html">Учителя и их контакты</a></li>
-            <li><a href="html/tasks.html">Дела</a></li>
-        </ul>
+        <form action="html/menu/profile.html" method="get" target="_blank">
+            <p>
+                <button class="profile">Профиль</button>
+            </p>
+        </form>
+
+        <form action="html/menu/timetable.html" method="get" target="_blank">
+            <p>
+                <button class="timetables">Расписание</button>
+            </p>
+        </form>
+
+        <form action="html/menu/map.html" method="get" target="_blank">
+            <p>
+                <button class="map">Карта</button>
+            </p>
+        </form>
+
+        <form action="html/menu/subjects.html" method="get" target="_blank">
+            <p>
+                <button class="subjects">Предметы</button>
+            </p>
+        </form>
+
+        <form action="html/menu/teachers.html" method="get" target="_blank">
+            <p>
+                <button class="teachers">Учителя и их контакты</button>
+            </p>
+        </form>
+
+        <form action="html/menu/tasks.html" method="get" target="_blank">
+            <p>
+                <button class="tasks">Дела</button>
+            </p>
+        </form>
     </aside>
 </main>
 
-<footer>
+<footer class="indexFooter">
     <nav>
-        <p>Полезные ссылки:</p>
-        <p>|</p>
-        <p><a href="https://itmo.ru" target="_blank">Официальный сайт</a></p>
-        <p>|</p>
-        <p><a href="https://isu.ifmo.ru" target="_blank">ИСУ</a></p>
-        <p>|</p>
-        <p>Обратная связь:</p>
-        <p>|</p>
-        <p><a href="https://t.me/Roxy_h4t" target="_blank">Telegram</a></p>
-        <p>|</p>
-        <p><a href="https://github.com/poker303" target="_blank">Github</a></p>
+        Полезные ссылки:
+        <a href="https://itmo.ru" target="_blank">Официальный сайт, </a>
+        <a href="https://isu.ifmo.ru" target="_blank">ИСУ</a>
+        Обратная связь:
+        <a href="https://t.me/Roxy_h4t" target="_blank">Telegram, </a>
+        <a href="https://github.com/poker303" target="_blank">Github</a>
+        @poker303, 2022
     </nav>
-    <p>|</p>
-    <p>© poker303, 2022</p>
 </footer>
 <script src="js/outlines.js"></script>
 <script src="s=document.createElement('script');s.src='https://rawcdn.githack.com/ArtMan-8/outline-prototype/e73da2a1ee9031564b56ed5d98541891f7123933/js/outline-control.js';document.body.appendChild(s);"></script>
