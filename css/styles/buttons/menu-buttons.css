@@ -1,49 +1,53 @@
-.firstButton,
-.secondButton{
+.first-button,
+.second-button {
     text-align: left;
+    text-decoration: none;
 }
 
 .profile,
 .timetables,
 .map,
-.subjects ,
+.subjects,
 .teachers,
-.tasks{
+.tasks {
     background: #D9BFA9;
-    font-family: RobotoM, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     font-size: 15px;
     color: black;
     border: 3px solid black;
     padding: 2px 4px;
     cursor: grab;
+    text-decoration: none;
+    line-height: 200%;
 }
 
-.profile:hover{
+.profile:hover {
     color: #3B4B59;
     border-color: #3B4B59;
 }
 
-.timetables:hover{
+.timetables:hover {
     color: #3B4B59;
     border-color: #3B4B59;
 }
 
-.map:hover{
+.map:hover {
     color: #3B4B59;
     border-color: #3B4B59;
 }
 
-.subjects:hover{
+.subjects:hover {
     color: #3B4B59;
     border-color: #3B4B59;
 }
 
-.teachers:hover{
+.teachers:hover {
     color: #3B4B59;
     border-color: #3B4B59;
 }
 
-.tasks:hover{
+.tasks:hover {
     color: #3B4B59;
     border-color: #3B4B59;
 }

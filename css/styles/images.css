@@ -1,9 +1,9 @@
-.mainLogo {
+.main-logo {
     text-align: right;
     filter: drop-shadow(3px 3px 5px #000000) drop-shadow(2px 2px 2px blue);
 }
 
-.taskPict{
+.task-pict {
     width: 30%;
     filter: drop-shadow(3px 3px 5px #000000) drop-shadow(2px 2px 2px blue);
 }
