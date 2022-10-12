@@ -6,33 +6,35 @@
     <meta name="description" content="Удобное расписание для студента">
     <meta name="keywords" content="расписание, меню, карта, предметы, дела">
     <link rel="icon" href="../../images/main.png">
-    <link rel="stylesheet" href="../../css/styles/fonts.css">
-    <link rel="stylesheet" href="../../css/styles/buttons/menuButtons.css">
-    <link rel="stylesheet" href="../../css/styles/buttons/registrationButtons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/styles/index.css">
     <link rel="stylesheet" href="../../css/styles/images.css">
 </head>
 
 <body>
-<header class="tasksHeader">
-    <a href="../../index.html"><img src="../../images/tasks.jpg" alt="Логотип" class="taskPict"></a>
+<header class="tasks-header">
+    <a href="../../index.html"><img src="../../images/tasks.jpg" alt="Логотип" class="task-pict"></a>
     <h1>Tasks</h1>
     <h2>Задачи, которые нужно сделать</h2>
 </header>
 
-<main class="tasksMain">
+<main class="tasks-main">
     <section>
         <h3>Предметы:</h3>
-        <ol>
-            <li>Web</li>
-            <li>ML</li>
-            <li>DevTools</li>
-        </ol>
+        <div class="subjects-set">
+            <ol>
+                <li>Web</li>
+                <li>ML</li>
+                <li>DevTools</li>
+            </ol>
+        </div>
     </section>
 
     <section>
         <h3>Задачи по предметам:</h3>
-        <div class="subjectTasks">
+        <div class="subject-tasks">
             <ul>
                 <li>Доделать первую лабораторную</li>
                 <li>Разобраться с Colab</li>
@@ -97,11 +99,13 @@
     </section>
 
     <h3>Формула успеха:</h3>
-    <p><span style="letter-spacing: normal">(2 * shapki)<sup>2</sup> + (2 * pivo)<sup>3</sup> - (10 let v Dote) + fiztech = f(Ivanov<sub>A</sub>)</span>
-    </p>
+    <div class="formula">
+        <p><span style="letter-spacing: normal">(2 * shapki)<sup>2</sup> + (2 * pivo)<sup>3</sup> - (10 let v Dote) + fiztech = f(Ivanov<sub>A</sub>)</span>
+        </p>
+    </div>
 </main>
 
-<footer class="tasksFooter">
+<footer class="tasks-footer">
     <nav>
         Полезные ссылки:
         <a href="https://itmo.ru" target="_blank">Официальный сайт, </a>
