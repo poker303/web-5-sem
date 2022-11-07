@@ -1,53 +1,51 @@
-.first-button,
-.second-button {
-    text-align: left;
-    text-decoration: none;
-}
-
 .profile,
 .timetables,
 .map,
 .subjects,
 .teachers,
 .tasks {
-    background: #D9BFA9;
+    background: #9b59b6;
+    color: hsl(0, 0%, 90%);
+    border: 2px solid black;
+
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 15px;
-    color: black;
-    border: 3px solid black;
-    padding: 2px 4px;
+
+    padding: 4px 4px;
+    border-radius: 120px;
+
     cursor: grab;
     text-decoration: none;
     line-height: 200%;
 }
 
 .profile:hover {
-    color: #3B4B59;
-    border-color: #3B4B59;
+    color: hsl(180, 50%, 88%);
+    border-color: white;
 }
 
 .timetables:hover {
-    color: #3B4B59;
-    border-color: #3B4B59;
+    color: hsl(180, 50%, 88%);
+    border-color: white;
 }
 
 .map:hover {
-    color: #3B4B59;
-    border-color: #3B4B59;
+    color: hsl(180, 50%, 88%);
+    border-color: white;
 }
 
 .subjects:hover {
-    color: #3B4B59;
-    border-color: #3B4B59;
+    color: hsl(180, 50%, 88%);
+    border-color: white;
 }
 
 .teachers:hover {
-    color: #3B4B59;
-    border-color: #3B4B59;
+    color: hsl(180, 50%, 88%);
+    border-color: white;
 }
 
 .tasks:hover {
-    color: #3B4B59;
-    border-color: #3B4B59;
+    color: hsl(180, 50%, 88%);
+    border-color: white;
 }
