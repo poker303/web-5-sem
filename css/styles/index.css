@@ -1,76 +1,150 @@
 /*index.html*/
-body {
-    background: #B0C1D9;
+html, body {
+    height: 100%;
+}
+
+html {
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
 }
 
 .index-header {
+    display: flex;
     font-family: 'Roboto', sans-serif;
     font-size: 1.3em;
     line-height: 125%;
     text-align: center;
-    text-decoration: underline dashed blueviolet;
     margin-left: 5px;
-    color: blueviolet;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dash-underline {
+    text-decoration: underline dashed blueviolet;
 }
 
 .index-main {
-    background: #88A5BF;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     padding: 5px 5px;
 }
 
 .index-footer {
-    background: #88A5BF;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    word-spacing: 4px;
+}
+
+
+@media screen and (max-width: 300px) {
+    .index-header, .index-main, .index-footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .index-header {
+        flex-direction: column;
+    }
+}
+
+/*tasks.html*/
+@media screen and (max-width: 1400px) {
+    .tasks-header {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3em;
+        line-height: 125%;
+        padding: 5px 5px;
+        text-decoration: underline dashed blueviolet;
+    }
+
+    .tasks-main {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        vertical-align: middle;
+        padding: 5px 5px;
+    }
+
+    .subjects-set {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+
+    .subject-tasks {
+        text-decoration: line-through;
+        text-decoration-color: red;
+        text-transform: uppercase;
+    }
+
+    .quotes {
+        vertical-align: middle;
+        text-indent: 5px;
+        font-weight: normal;
+    }
+
+    .formula {
+        font-style: italic;
+    }
+}
+
+.tasks-footer {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     display: flex;
     justify-content: center;
     font-size: 15px;
     word-spacing: 4px;
+    padding: 5px 5px;
 }
 
-/*tasks.html*/
-.tasks-header {
+@media screen and (max-width: 590px) {
+    .ASCII {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .code {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 210px) {
+    .tasks-main {
+        display: none;
+    }
+}
+
+.teachers-header {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3em;
     line-height: 125%;
     padding: 5px 5px;
     text-decoration: underline dashed blueviolet;
-    color: rgb(0, 0, 0);
+    text-align: center;
 }
 
-.tasks-main {
-    background: #88A5BF;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    vertical-align: middle;
-    padding: 5px 5px;
-}
-
-.subjects-set {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-}
-
-.subject-tasks {
-    text-decoration: line-through;
-    text-decoration-color: red;
-    text-transform: uppercase;
-}
-
-.quotes {
-    vertical-align: middle;
-    text-indent: 5px;
-    font-weight: normal;
-}
-
-.formula {
-    font-style: italic;
-}
-
-.tasks-footer {
-    background: #88A5BF;
+.teachers-footer {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     display: flex;
@@ -78,4 +152,35 @@ body {
     font-size: 15px;
     word-spacing: 4px;
     padding: 5px 5px;
+}
+
+@media screen and (max-width: 510px) {
+    .teachers-main-max-width-510 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .povish-trap {
+        background-image: url("stickerTrap.webp");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .teachers-header {
+        display: none;
+    }
+
+    .teachers-main-max-width-510 {
+        display: none;
+    }
+
+    .teachers-footer {
+        display: none;
+    }
 }
