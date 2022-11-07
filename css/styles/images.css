@@ -9,18 +9,18 @@
 }
 
 @media screen and (max-width: 360px) {
-    .task-pict{
+    .task-pict {
         display: none;
     }
 }
 
-.teachers-pict{
+.teachers-pict {
     text-align: left;
     filter: drop-shadow(3px 3px 5px #000000) drop-shadow(2px 2px 2px blue);
 }
 
 @media screen and (max-width: 420px) {
-    .teachers-pict{
+    .teachers-pict {
         display: none;
     }
 }
