@@ -6,9 +6,12 @@
 .task-pict {
     text-align: left;
     filter: drop-shadow(3px 3px 5px #000000) drop-shadow(2px 2px 2px blue);
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 870px) {
     .task-pict {
         display: none;
     }
