@@ -9,29 +9,30 @@ table {
     justify-content: center;
 }
 
-caption {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 2em;
-    padding: 10px;
-    color: black;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
-    text-align: center;
+thead,
+tbody,
+tr {
+    display: contents;
 }
 
 tr {
     background: radial-gradient(farthest-corner at 50% 50%, white, #DCECF8);
 }
 
-tr:nth-child(even) {
+tr:nth-child(even) td {
     background: yellow;
 }
 
+tr:nth-child(odd) td {
+    background: #26e3cf;
+}
+
 th {
+    position: sticky;
     padding: 20px;
     border: 3px solid black;
     text-align: center;
-    background: radial-gradient(farthest-corner at 50% 50%, white, #DCECF8);
+    background: blanchedalmond;
 }
 
 td {
@@ -40,3 +41,4 @@ td {
     border: 3px solid black;
     text-align: center;
 }
+
