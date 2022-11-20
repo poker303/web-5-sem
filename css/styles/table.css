@@ -1,0 +1,44 @@
+table {
+    display: grid;
+    border-collapse: collapse;
+    line-height: 2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #0C213B;
+    flex: 1;
+    justify-content: center;
+}
+
+thead,
+tbody,
+tr {
+    display: contents;
+}
+
+tr {
+    background: radial-gradient(farthest-corner at 50% 50%, white, #DCECF8);
+}
+
+tr:nth-child(even) td {
+    background: yellow;
+}
+
+tr:nth-child(odd) td {
+    background: #26e3cf;
+}
+
+th {
+    position: sticky;
+    padding: 20px;
+    border: 3px solid black;
+    text-align: center;
+    background: blanchedalmond;
+}
+
+td {
+    font-size: 0.8em;
+    padding: 7px 10px;
+    border: 3px solid black;
+    text-align: center;
+}
+
