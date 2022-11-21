@@ -1,6 +1,6 @@
 function calcLoadTime() {
     let loadTime = window.performance.getEntriesByType('navigation');
-    return "Время загрузки страницы: " + Math.round(loadTime[0].domComplete) + 'ms';
+    return `Время загрузки страницы: ${Math.round(loadTime[0].domComplete)}ms`;
 }
 
 function loadingTime() {
