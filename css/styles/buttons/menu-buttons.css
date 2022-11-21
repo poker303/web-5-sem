@@ -1,16 +1,11 @@
-.profile,
-.timetables,
-.map,
-.subjects,
-.teachers,
-.tasks {
+.menu-button {
     background: #9b59b6;
     color: hsl(0, 0%, 90%);
     border: 2px solid black;
 
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 18px;
 
     padding: 4px 4px;
     border-radius: 120px;
@@ -20,32 +15,8 @@
     line-height: 200%;
 }
 
-.profile:hover {
+.menu-button:hover {
     color: hsl(180, 50%, 88%);
     border-color: white;
-}
-
-.timetables:hover {
-    color: hsl(180, 50%, 88%);
-    border-color: white;
-}
-
-.map:hover {
-    color: hsl(180, 50%, 88%);
-    border-color: white;
-}
-
-.subjects:hover {
-    color: hsl(180, 50%, 88%);
-    border-color: white;
-}
-
-.teachers:hover {
-    color: hsl(180, 50%, 88%);
-    border-color: white;
-}
-
-.tasks:hover {
-    color: hsl(180, 50%, 88%);
-    border-color: white;
+    text-decoration: underline hsl(180, 50%, 88%);
 }
