@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="css/styles/buttons/registration-buttons.css">
     <link rel="stylesheet" href="css/styles/index.css">
     <link rel="stylesheet" href="css/styles/images.css">
+
+    <script src="js/page-load-time.js"></script>
+    <script src="js/pages-navigation.js"></script>
+    <script src="js/listeners.js"></script>
 </head>
 
 <body>
@@ -36,13 +40,14 @@
 
         <main class="index-main">
             <aside>
-                <p>Меню:</p>
-                <a href="html/menu/profile.html" class="profile" target="_blank">Профиль</a>
-                <p><a href="html/menu/timetable.html" class="timetables" target="_blank">Расписание</a></p>
-                <p><a href="html/menu/map.html" class="map" target="_blank">Карта</a></p>
-                <p><a href="html/menu/subjects.html" class="subjects" target="_blank">Предметы</a></p>
-                <p><a href="html/menu/teachers.html" class="teachers" target="_blank">Учителя и их контакты</a></p>
-                <p><a href="html/menu/tasks.html" class="tasks" target="_blank">Дела</a></p>
+                <p style="font-size: 30px">Меню:</p>
+                <a href="index.html" class="menu-button" id="home">Домашняя страница</a>
+                <p><a href="html/menu/profile.html" class="menu-button" target="_blank">Профиль</a></p>
+                <p><a href="html/menu/timetable.html" class="menu-button" target="_blank">Расписание</a></p>
+                <p><a href="html/menu/map.html" class="menu-button" target="_blank">Карта</a></p>
+                <p><a href="html/menu/subjects.html" class="menu-button" target="_blank">Предметы</a></p>
+                <p><a href="html/menu/teachers.html" class="menu-button" target="_blank">Учителя и их контакты</a></p>
+                <p><a href="html/menu/tasks.html" class="menu-button" target="_blank">Дела</a></p>
             </aside>
         </main>
     </div>
@@ -56,6 +61,7 @@
             <a href="https://github.com/poker303" target="_blank">Github</a>
             @poker303, 2022
         </nav>
+        <div class="time-of-loading" id="time-of-loading"></div>
     </footer>
 </div>
 </body>
