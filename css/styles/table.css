@@ -20,7 +20,7 @@ tr {
 }
 
 tr:nth-child(even) td {
-    background: yellow;
+    background: #cf6cee;
 }
 
 tr:nth-child(odd) td {
@@ -30,15 +30,15 @@ tr:nth-child(odd) td {
 th {
     position: sticky;
     padding: 20px;
-    border: 3px solid black;
+    border: 2px solid black;
     text-align: center;
     background: blanchedalmond;
 }
 
 td {
-    font-size: 0.8em;
+    font-size: 1.2em;
     padding: 7px 10px;
-    border: 3px solid black;
+    border: 2px solid black;
     text-align: center;
 }
 
