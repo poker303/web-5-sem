@@ -1,0 +1,35 @@
+input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+
+    text-align: center;
+    color: white;
+    text-indent: 0;
+    margin: 5px;
+    padding: 10px;
+    background-color: #8f22c4;
+    border-radius: 20em;
+    cursor: grab;
+}
+
+::placeholder {
+    color: white;
+}
+
+button {
+    background: #8f22c4;
+    color: white;
+    border: 3px solid black;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+    padding: 4px 4px;
+    border-radius: 120px;
+
+    cursor: grab;
+    text-decoration: none;
+    line-height: 200%;
+}
