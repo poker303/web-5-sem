@@ -65,7 +65,7 @@ function addValueToCell(table, columnNumber, rowNumber, value) {
 
 function saveTable() {
     let table = document.getElementsByTagName('table')[0];
-    let tableInfo = [];
+    let tableData = [];
 
     for (let rowNumber = 0; rowNumber < table.rows.length; rowNumber++) {
         for (let columnNumber = 0; columnNumber < table.rows[rowNumber].cells.length; columnNumber++) {
@@ -78,12 +78,12 @@ function saveTable() {
                     content: tableCellValue
                 };
 
-                tableInfo.push(cellData);
+                tableData.push(cellData);
             }
         }
     }
 
-    localStorage.setItem('tableInfo', JSON.stringify(tableInfo));
+    localStorage.setItem('tableData', JSON.stringify(tableData));
     localStorage.setItem('tableColumnsNumber', table.rows[0].cells.length.toString());
     localStorage.setItem('tableRowsNumber', table.rows.length.toString());
 }
@@ -93,7 +93,7 @@ function clearLocalStorage() {
 }
 
 function uploadTable(parent, columnsNumber, rowsNumber) {
-    let tableInfo = JSON.parse(localStorage.getItem('tableInfo'));
+    let tableInfo = JSON.parse(localStorage.getItem('tableData'));
 
     if (columnsNumber === 0 || rowsNumber === 0) return;
 
