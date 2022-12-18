@@ -10,6 +10,5 @@ document.addEventListener('DOMContentLoaded', () => setUpActionHandlers())
 document.addEventListener('DOMContentLoaded', () =>
     uploadTable(
         document.getElementById('dynamic-table'),
-        Number(localStorage.getItem('tableColumnsNumber')),
         Number(localStorage.getItem('tableRowsNumber'))
     ));
