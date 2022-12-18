@@ -198,7 +198,6 @@ html {
     line-height: 125%;
     padding: 5px 5px;
     text-decoration: underline dashed blueviolet;
-    text-align: center;
 }
 
 .timetable-main {
@@ -206,7 +205,6 @@ html {
     font-size: 0.8em;
     line-height: 125%;
     padding: 2px 2px;
-    text-align: center;
 }
 
 .timetable-footer {
