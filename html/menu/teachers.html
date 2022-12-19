@@ -12,9 +12,22 @@
     <link rel="stylesheet" href="../../css/styles/index.css">
     <link rel="stylesheet" href="../../css/styles/images.css">
     <link rel="stylesheet" href="../../css/styles/table.css">
+    <link rel="stylesheet" href="../../css/styles/forms.css">
 
     <script src="../../js/page-load-time.js"></script>
     <script src="../../js/listeners.js"></script>
+    <script src="../../js/notifications.js"></script>
+
+    <!-- Import Swiper styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Chilanka&display=swap" rel="stylesheet">
+
+    <!-- Import Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Import Sweetalert -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="povish-trap">
@@ -27,6 +40,9 @@
 </header>
 
 <main class="teachers-main-max-width-510">
+
+    <button id="click-me" type="submit">А тут что?</button>
+
     <table style="grid-template-columns: minmax(200px, 500px) minmax(200px, 500px) minmax(200px, 500px) minmax(200px, 500px)">
         <tr>
             <th>№</th>
@@ -72,6 +88,82 @@
         </tr>
     </table>
     <p></p>
+
+    <!-- Create Swiper section -->
+    <section class="swiper-section">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+                <!-- Create Swiper slides with some info -->
+                <div class="swiper-slide slide-1">
+                    <h1 class="current-subject">Web-практик и Git-лектор</h1>
+                    <h2 class="teacher-name">Андреев Николай Владимирович</h2>
+                    <img src="../../images/swiper/teachers/Kolya.jpg" alt="Преподаватель"
+                         width="400" height="400">
+                </div>
+
+                <div class="swiper-slide slide-2">
+                    <h1 class="current-subject">Web-лектор</h1>
+                    <h2 class="teacher-name">Макаревич Роман Дмитриевич</h2>
+                    <img src="../../images/swiper/teachers/Roma.jpg" alt="Преподаватель"
+                         width="400" height="400">
+                </div>
+
+                <div class="swiper-slide slide-3">
+                    <h1 class="current-subject">ML-лектор-практик</h1>
+                    <h2 class="teacher-name">Хлопотов Максим Валерьевич</h2>
+                    <img src="../../images/swiper/teachers/Hlopich.webp" alt="Преподаватель"
+                         width="400" height="370">
+                </div>
+
+                <div class="swiper-slide slide-4">
+                    <h1 class="current-subject">Примат-лектор-практик</h1>
+                    <h2 class="teacher-name">Москаленко Мария Александровна</h2>
+                    <img src="../../images/swiper/teachers/MA.jpg" alt="Преподаватель"
+                         width="400" height="400">
+                </div>
+
+                <div class="swiper-slide slide-5">
+                    <h1 class="current-subject">Windows</h1>
+                    <h2 class="teacher-name">Береснев Артём Дмитриевич</h2>
+                    <img src="../../images/swiper/teachers/Beresnev.jpg" alt="Преподаватель"
+                         width="400" height="400">
+                </div>
+            </div>
+
+            <!-- Create Swiper buttons -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"><img src="../../images/swiper/buttons/next-page.png" alt="Стрелка"
+                                                 width="120" height="100"></div>
+            <div class="swiper-button-prev"><img src="../../images/swiper/buttons/prev-page.png" alt="Стрелка"
+                                                 width="120" height="100"></div>
+        </div>
+    </section>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 1,
+            keyboard: {
+                enabled: true
+            },
+
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar'
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+    </script>
 </main>
 
 <footer class="teachers-footer">
