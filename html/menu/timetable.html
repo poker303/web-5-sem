@@ -1,10 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <title>Schedule</title>
+    <meta name="description" content="Удобное расписание для студента">
+    <meta name="keywords" content="расписание, меню, карта, предметы, дела">
+    <link rel="icon" href="../../images/main.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles/index.css">
+    <link rel="stylesheet" href="../../css/styles/images.css">
+    <link rel="stylesheet" href="../../css/styles/dynamic-table.css">
+    <link rel="stylesheet" href="../../css/styles/forms.css">
 
+    <script src="../../js/page-load-time.js"></script>
+    <script src="../../js/listeners.js"></script>
+    <script src="../../js/dynamic-table.js"></script>
+</head>
+
+<body>
+<header>
+    <section class="timetable-header">
+        <div class="timetable-pict"><a href="../../index.html"><img src="../../images/timetable.jpg" alt="Логотип"
+                                                                    width="400" height="300"></a></div>
+        <h1>Таблица расписания на неделю:</h1>
+    </section>
+</header>
+
+<main class="timetable-main">
+
+    <h2>Создайте таблицу нужного размера:</h2>
+    <form id="table-size" action="">
+        <label for="rows"></label><input type="number" required="required" min="1" step="1"
+                                         placeholder="Количество строк" id="rows">
+
+        <button id="table-size-button" type="submit">Загрузить</button>
+    </form>
+
+    <h2>Заполните таблицу:</h2>
+    <form id="table-input" action="">
+        <label for="column-cell"></label><input type="number" required="required" min="1" step="1"
+                                                placeholder="Столбец" id="column-cell">
+        <label for="row-cell"></label><input type="number" required="required" min="1" step="1"
+                                             placeholder="Строка" id="row-cell">
+        <label for="table-cell-value"></label><input type="text" required="required"
+                                                     placeholder="Значение" id="table-cell-value">
+        <label for="table-cell-status"></label><input type="text" required="required"
+                                                      placeholder="Статус" id="table-cell-status">
+
+        <button id="table-input-button" type="submit">Загрузить</button>
+        <button id="table-highlight-button" type="button">Выделить</button>
+        <button id="table-notice-button" type="button">Отметить</button>
+    </form>
+
+    <h2>Добавить новые строки:</h2>
+    <form id="table-change-rows" action="">
+        <label for="row-place"></label><input type="number" required="required" min="1" step="1"
+                                              placeholder="Место строки" id="row-place">
+
+        <button id="add-row-button" type="submit">Загрузить</button>
+        <button id="delete-row-button" type="button">Удалить</button>
+    </form>
+
+    <h2>Удаление таблицы:</h2>
+    <button id="clear-table-button">Удалить таблицу</button>
+
+    <div id="dynamic-table"></div>
+    <p></p>
+</main>
+
+<footer class="timetable-footer">
+    <nav>
+        Полезные ссылки:
+        <a href="https://itmo.ru" target="_blank">Официальный сайт, </a>
+        <a href="https://isu.ifmo.ru" target="_blank">ИСУ</a>
+        Обратная связь:
+        <a href="https://t.me/Roxy_h4t" target="_blank">Telegram, </a>
+        <a href="https://github.com/poker303" target="_blank">Github</a>
+        @poker303, 2022
+    </nav>
+    <div class="time-of-loading" id="time-of-loading"></div>
+</footer>
 </body>
 </html>

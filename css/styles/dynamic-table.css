@@ -1,0 +1,24 @@
+table {
+    background: blanchedalmond;
+    border: 3px solid black;
+    margin: 15px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) td {
+    background: #fde07c;
+}
+
+tr:nth-child(odd) td {
+    background: #fdabea;
+}
+
+th, td {
+    border: 4px solid black;
+    text-align: center;
+    vertical-align: center;
+    padding: 14px;
+    font-size: 1.4em;
+}
