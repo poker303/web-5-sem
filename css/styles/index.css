@@ -224,3 +224,86 @@ html {
         display: none;
     }
 }
+
+.swiper-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+.swiper {
+    width: 90%;
+    height: 500px;
+}
+
+.slide-1,
+.slide-2,
+.slide-3,
+.slide-4,
+.slide-5 {
+    text-align: center;
+}
+
+.current-subject {
+    font-family: Roboto Black, cursive;
+}
+
+.teacher-name {
+    font-family: Roboto Black, cursive;
+    text-transform: uppercase;
+    color: #874b9b;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    opacity: 2;
+    background-color: #cbc9e7;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #db53ee;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    margin: 150px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+.timetable-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    line-height: 125%;
+    padding: 5px 5px;
+    text-decoration: underline dashed blueviolet;
+}
+
+.timetable-main {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    line-height: 125%;
+    padding: 2px 2px;
+}
+
+.timetable-footer {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    word-spacing: 4px;
+    padding: 5px 5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 785px) {
+    .timetable-header, .timetable-main {
+        display: none;
+    }
+}
